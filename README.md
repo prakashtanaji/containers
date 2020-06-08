@@ -26,6 +26,24 @@ Docker has good eco-system built around it and good documentaion, which makes is
 
  The standard images are publicly made available for common use in public image repository like DockerHub, AWS - Elastic Container Repository(ECR, locally available in AWS).
 
- 
+ ##Docker Instructions
+Pre-Requisite: Docker Engine must be installed and running to execute below docker cli
+
+ To build docker image: docker build -t prakashtanaji/nodeapp .
+ To view docker images: docker images
+ To run docker image:  docker run --name nodeapp-demo -p 64001:64000 -d nodeapptest
+ To view runnning containers: docker ps
+ To login into the running container shell: docker exec -it <container id>  /bin/ash
+
+
+###To setup docker engine:
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+docker version
+docker info
+
+
+
+
 
 
