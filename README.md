@@ -37,10 +37,18 @@ Pre-Requisite: Docker Engine must be installed and running to execute below dock
 
 
 ### To setup docker engine:
+Download docker engine setup script from docker.com:
 curl -fsSL https://get.docker.com -o get-docker.sh
+
+Run the downloaded shell script to install the engine:
 sudo sh get-docker.sh
+
+To view the version of Docker running(make sure docker daemon is running):
 docker version
+
+To check the system kernel and other details:
 docker info
+
 
 
 
